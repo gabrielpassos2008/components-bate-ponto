@@ -1,0 +1,39 @@
+.tabela__wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.tabela thead {
+  background-color: #f9fafb;
+}
+
+.tabela th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.tabela td {
+  padding: 0.75rem 1rem;
+  color: #111827;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela tbody tr:hover {
+  background-color: #f9fafb;
+}

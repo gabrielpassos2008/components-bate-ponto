@@ -1,0 +1,25 @@
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio__input {
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.radio__input:disabled {
+  cursor: not-allowed;
+}
+
+.radio:has(.radio__input:disabled) {
+  color: #9ca3af;
+  cursor: not-allowed;
+}

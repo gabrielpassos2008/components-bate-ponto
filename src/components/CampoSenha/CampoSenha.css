@@ -1,0 +1,53 @@
+.campo-senha {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo-senha:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.campo-senha--erro {
+  border-color: #dc2626;
+}
+
+.campo-senha__input {
+  flex: 1;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.9375rem;
+  color: #111827;
+  border: none;
+  outline: none;
+}
+
+.campo-senha__input:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.campo-senha__alternar {
+  padding: 0 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #2563eb;
+  background-color: #f9fafb;
+  border: none;
+  border-left: 1px solid #d1d5db;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.campo-senha__alternar:hover:not(:disabled) {
+  background-color: #f3f4f6;
+}
+
+.campo-senha__alternar:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
